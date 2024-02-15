@@ -49,7 +49,11 @@ function getPlanetName(planet) {
     return planet['kepler_name'];
 }
 
+function getAllPlanets() {
+    return habitablePlanets;
+}
+
 module.exports = {
     loadPlanetsData,
-    planets: habitablePlanets,
+    getAllPlanets,
 }
