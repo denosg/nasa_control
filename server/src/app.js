@@ -7,9 +7,11 @@ const planetsRouter = require('./routes/planets/planets.router')
 
 const app = express();
 
+//cross origin
 app.use(cors({
     origin: 'http://localhost:3000'
 }));
+//logging
 app.use(morgan('combined'));
 
 app.use(express.json())
